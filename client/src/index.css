@@ -528,6 +528,7 @@ z-index: 3;
 }
 
 .hero-button:hover {
+  cursor: pointer;
   color: var(--border-light);
   background-color: var(--border-dark);
 }
@@ -593,6 +594,8 @@ flex-direction: column;
 }
 
 .product-add-btn:hover {
+  cursor: pointer;
+
   color: #e2e2e2;
 background-color: var(--border-dark);
 }
@@ -642,6 +645,8 @@ background-color: var(--border-dark);
 }
 
 .detail-cart-buttons button:hover {
+  cursor: pointer;
+
   color: #e2e2e2;
 background-color: var(--border-dark);
 }
@@ -652,6 +657,26 @@ background-color: var(--border-dark);
 }
 
 
+.order-history {
+  margin-top: 15%;
+}
+
+.checkout-btn {
+  padding: 2%;
+  font-size: large;
+
+  background-color: #fafafa;
+
+  border: 2px solid var(--border-dark);
+  color: var(--border-dark);
+}
+
+.checkout-btn:hover {
+  cursor: pointer;
+
+  color: #e2e2e2;
+  background-color: var(--border-dark);
+}
 
 @media screen and (max-width: 768px) {
   .card {

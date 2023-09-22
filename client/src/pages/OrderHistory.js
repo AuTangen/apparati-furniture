@@ -14,14 +14,17 @@ function OrderHistory() {
 
   return (
     <>
-      <div className="container my-1">
+      <div className="container my-1 order-history">
         <Link to="/">← Back to Products</Link>
+        
 
-        {user ? (
+        {user && user.orders.length > 0 ? (
           <>
             <h2>
               Order History for {user.firstName} {user.lastName}
             </h2>
+
+            
             {user.orders.map((order) => (
               <div key={order._id} className="my-2">
                 <h3>
@@ -43,7 +46,7 @@ function OrderHistory() {
               </div>
             ))}
           </>
-        ) : null}
+        ) : <h3>You don't have any orders yet!</h3>}
       </div>
     </>
   );

@@ -13,25 +13,29 @@ function HeroBannerRight() {
 
 
     return (
-        
+
         <div className='hero-container'>
             <div className='hero-container-text'>
                 <div className='hero-text-area'>
-                <h3 className='hero-title'>Build your ultimate home office</h3>
-                <p className='hero-call2action'>We have everything you need to add style and comfort to your workspace to maximize productivity</p>
-                <button className='hero-button'>
-                <Link to='/shop'>
-                    Shop Now
+                    <h3 className='hero-title'>Build your ultimate home office</h3>
+
+                    <p className='hero-call2action'>We have everything you need to add style and comfort to your workspace to maximize productivity</p>
+
+                    <Link to='/shop'>
+                        <button className='hero-button'>
+
+                            Shop Now
+
+                        </button>
                     </Link>
-                    </button>
                 </div>
             </div>
 
             <div className='hero-container-img'>
-            <img className='hero-image' src={HomeOffice}></img>
+                <img className='hero-image' src={HomeOffice}></img>
             </div>
         </div>
-        
+
     )
 }
 

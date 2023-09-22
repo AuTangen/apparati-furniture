@@ -13,27 +13,29 @@ function HeroBannerLeft() {
 
 
     return (
-        
+
         <div className='hero-container'>
-        <div className='hero-container-img'>
-            <img className='hero-image' src={LivingRoom}></img>
+            <div className='hero-container-img'>
+                <img className='hero-image' src={LivingRoom}></img>
             </div>
 
             <div className='hero-container-text'>
                 <div className='hero-text-area'>
-                <h3 className='hero-title'>Lounge in style</h3>
-                <p className='hero-call2action'>Entertain guests or enjoy a night in with the family. We can help you level up your living room</p>
-                <button className='hero-button'>
-                <Link to='/shop'>
-                    Shop Now
+                    <h3 className='hero-title'>Lounge in style</h3>
+                    <p className='hero-call2action'>Entertain guests or enjoy a night in with the family. We can help you level up your living room</p>
+                    <Link to='/shop'>
+                        <button className='hero-button'>
+
+                            Shop Now
+
+                        </button>
                     </Link>
-                    </button>
                 </div>
             </div>
 
-            
+
         </div>
-        
+
     )
 }
 
